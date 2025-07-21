@@ -20,4 +20,4 @@ COPY . .
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 
 # *** คำสั่งที่ถูกต้องตามโครงสร้างของคุณ ***
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
+CMD gunicorn src.main:app --bind 0.0.0.0:$PORT
