@@ -11,18 +11,18 @@ def create_complete_database(db_path='pos_database.db'):
     
     # สร้างตารางผู้ใช้
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            username TEXT UNIQUE NOT NULL,
-            email TEXT UNIQUE NOT NULL,
-            password_hash TEXT NOT NULL,
-            full_name TEXT,
-            role TEXT DEFAULT 'staff',
-            is_active BOOLEAN DEFAULT 1,
-            created_at TEXT DEFAULT CURRENT_TIMESTAMP,
-            last_login TEXT
-        )
-    ''')
+    CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT UNIQUE NOT NULL,
+        email TEXT UNIQUE NOT NULL,
+        password_hash TEXT NOT NULL,
+        full_name TEXT,
+        role TEXT DEFAULT 'staff',
+        is_active BOOLEAN DEFAULT 1,
+        created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+        last_login TEXT
+    )
+''')
     
     # สร้างตารางร้าน
     cursor.execute('''
@@ -364,4 +364,3 @@ def insert_sample_data(cursor):
 
 if __name__ == "__main__":
     create_complete_database()
-
