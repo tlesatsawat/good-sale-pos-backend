@@ -16,9 +16,8 @@ RUN pip install -r requirements.txt
 # คัดลอกไฟล์โปรเจคที่เหลือทั้งหมดเข้าไป
 COPY . .
 
-# *** บรรทัดสำคัญที่เพิ่มเข้ามา ***
 # บอกให้ Python รู้จักโฟลเดอร์รากของโปรเจค
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 
-# คำสั่งที่จะรันเมื่อแอปพลิเคชันเริ่มทำงาน
-CMD gunicorn app:app --bind 0.0.0.0:$PORT
+# *** คำสั่งที่ถูกต้องตามโครงสร้างของคุณ ***
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
