@@ -4,9 +4,6 @@ FROM python:3.11-slim
 # ตั้งค่า Working Directory ภายใน Container
 WORKDIR /app
 
-# อัปเกรดเครื่องมือติดตั้ง
-RUN pip install --upgrade pip
-
 # คัดลอกไฟล์ requirements.txt เข้าไปก่อน
 COPY requirements.txt .
 
@@ -16,8 +13,6 @@ RUN pip install -r requirements.txt
 # คัดลอกไฟล์โปรเจคที่เหลือทั้งหมดเข้าไป
 COPY . .
 
-# บอกให้ Python รู้จักโฟลเดอร์รากของโปรเจค
-ENV PYTHONPATH "${PYTHONPATH}:/app"
-
-# *** คำสั่งที่ถูกต้องตามโครงสร้างของคุณ ***
-CMD gunicorn src.main:app --bind 0.0.0.0:$PORT
+# *** คำสั่งที่ถูกต้องสำหรับ Application Factory ***
+# บอกให้ Gunicorn เรียกใช้ฟังก์ชัน create_app() ที่อยู่ในโมดูล src.main
+CMD ["gunicorn", "--bind", "0.0.0.0:10000", "src.main:create_app()"]
