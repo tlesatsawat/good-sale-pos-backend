@@ -21,4 +21,4 @@ COPY . .
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 
 # คำสั่งที่จะรันเมื่อแอปพลิเคชันเริ่มทำงาน
-CMD ["gunicorn", "src.app:app", "--bind", "0.0.0.0:10000"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
