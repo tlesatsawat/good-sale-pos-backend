@@ -1,0 +1,695 @@
+2025-07-12 14:47:25,381 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 14:47:25,381 - security - INFO - Security and performance monitoring initialized
+2025-07-12 14:47:25,381 - backup - INFO - Database backup created: backups/pos_backup_20250712_144725.db
+2025-07-12 14:47:25,381 - backup - INFO - Backup schedule configured
+2025-07-12 14:47:25,382 - backup - INFO - Backup scheduler started
+2025-07-12 14:47:25,422 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 14:47:25,422 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 14:47:25,425 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+2025-07-12 14:47:25,425 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 14:51:34,770 - main - ERROR - Exception on / [HEAD]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:34,776 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:34,777 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:34] "[35m[1mHEAD / HTTP/1.1[0m" 500 -
+2025-07-12 14:51:34,785 - main - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:34,785 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:34,786 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-12 14:51:40,163 - main - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,164 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,164 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-12 14:51:40,483 - main - ERROR - Exception on /assets/index-DVwoJx2q.js [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,484 - main - ERROR - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,485 - main - ERROR - Exception on /assets/index-dMa7SZ_7.css [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,486 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,487 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,487 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:40,488 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:40] "[35m[1mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 500 -
+2025-07-12 14:51:40,489 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-07-12 14:51:40,490 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:40] "[35m[1mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 500 -
+2025-07-12 14:51:46,164 - main - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:46,165 - main - ERROR - Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 941, in finalize_request
+    response = self.process_response(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/venv/lib/python3.11/site-packages/flask/app.py", line 1319, in process_response
+    response = self.ensure_sync(func)(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/good_sale_pos/src/main.py", line 80, in after_request
+    monitors['app_monitor'].log_request(
+    ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'app_monitor'
+2025-07-12 14:51:46,165 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:51:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-12 14:53:37,319 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 14:53:37,319 - security - INFO - Security and performance monitoring initialized
+2025-07-12 14:53:37,320 - backup - INFO - Database backup created: backups/pos_backup_20250712_145337.db
+2025-07-12 14:53:37,320 - backup - INFO - Backup schedule configured
+2025-07-12 14:53:37,321 - backup - INFO - Backup scheduler started
+2025-07-12 14:53:37,347 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 14:53:37,348 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 14:53:37,351 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+2025-07-12 14:53:37,351 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 14:58:06,203 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0033s
+2025-07-12 14:58:06,203 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 14:58:06,204 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:58:06] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-12 14:58:06,296 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0007s
+2025-07-12 14:58:06,296 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 14:58:06,297 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:58:06] "[36mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 304 -
+2025-07-12 14:58:06,298 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0004s
+2025-07-12 14:58:06,298 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 14:58:06,299 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:58:06] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 14:58:06,815 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0005s
+2025-07-12 14:58:06,815 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 14:58:06,816 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:58:06] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 14:58:06,878 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 14:58:06,878 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 14:58:06,878 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:58:06] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 14:58:33,094 - monitoring_simple - INFO - API Request: POST auth.login - 401 - 0.0007s
+2025-07-12 14:58:33,094 - security - WARNING - Slow request: POST auth.login - 401.00s
+2025-07-12 14:58:33,095 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:58:33] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-07-12 15:03:25,563 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0006s
+2025-07-12 15:03:25,563 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:03:25,563 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:03:25] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-12 15:03:25,625 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0017s
+2025-07-12 15:03:25,626 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0013s
+2025-07-12 15:03:25,626 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:03:25,626 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:03:25,627 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:03:25] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:03:25,627 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:03:25] "[36mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 304 -
+2025-07-12 15:03:26,222 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 15:03:26,222 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 15:03:26,222 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:03:26] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 15:03:26,289 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0005s
+2025-07-12 15:03:26,289 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:03:26,290 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:03:26] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:05:39,591 - monitoring_simple - INFO - API Request: HEAD serve - 200 - 0.0004s
+2025-07-12 15:05:39,591 - security - WARNING - Slow request: HEAD serve - 200.00s
+2025-07-12 15:05:39,591 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:05:39] "HEAD / HTTP/1.1" 200 -
+2025-07-12 15:05:39,598 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0004s
+2025-07-12 15:05:39,599 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 15:05:39,599 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:05:39] "GET / HTTP/1.1" 200 -
+2025-07-12 15:07:43,743 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0004s
+2025-07-12 15:07:43,743 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 15:07:43,744 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:43] "GET / HTTP/1.1" 200 -
+2025-07-12 15:07:44,055 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0014s
+2025-07-12 15:07:44,055 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 15:07:44,055 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0012s
+2025-07-12 15:07:44,056 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:44] "GET /assets/index-DVwoJx2q.js HTTP/1.1" 200 -
+2025-07-12 15:07:44,056 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 15:07:44,056 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:44] "GET /assets/index-dMa7SZ_7.css HTTP/1.1" 200 -
+2025-07-12 15:07:45,952 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 15:07:45,952 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 15:07:45,953 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:45] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 15:07:48,127 - monitoring_simple - INFO - API Request: POST auth.login - 200 - 0.0011s
+2025-07-12 15:07:48,127 - security - WARNING - Slow request: POST auth.login - 200.00s
+2025-07-12 15:07:48,128 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:48] "POST /api/auth/login HTTP/1.1" 200 -
+2025-07-12 15:07:48,645 - monitoring_simple - INFO - API Request: GET packages.get_current_subscription - 200 - 0.0001s
+2025-07-12 15:07:48,646 - monitoring_simple - INFO - API Request: GET stores.get_stores - 200 - 0.0001s
+2025-07-12 15:07:48,646 - security - WARNING - Slow request: GET packages.get_current_subscription - 200.00s
+2025-07-12 15:07:48,646 - security - WARNING - Slow request: GET stores.get_stores - 200.00s
+2025-07-12 15:07:48,647 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:48] "GET /api/subscription/current HTTP/1.1" 200 -
+2025-07-12 15:07:48,647 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:48] "GET /api/stores HTTP/1.1" 200 -
+2025-07-12 15:07:53,810 - monitoring_simple - INFO - API Request: POST stores.close_store - 200 - 0.0001s
+2025-07-12 15:07:53,811 - security - WARNING - Slow request: POST stores.close_store - 200.00s
+2025-07-12 15:07:53,811 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:53] "POST /api/stores/1/close HTTP/1.1" 200 -
+2025-07-12 15:07:54,149 - monitoring_simple - INFO - API Request: GET packages.get_current_subscription - 200 - 0.0001s
+2025-07-12 15:07:54,150 - monitoring_simple - INFO - API Request: GET stores.get_stores - 200 - 0.0001s
+2025-07-12 15:07:54,150 - security - WARNING - Slow request: GET packages.get_current_subscription - 200.00s
+2025-07-12 15:07:54,151 - security - WARNING - Slow request: GET stores.get_stores - 200.00s
+2025-07-12 15:07:54,151 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:54] "GET /api/subscription/current HTTP/1.1" 200 -
+2025-07-12 15:07:54,151 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 15:07:54] "GET /api/stores HTTP/1.1" 200 -
+2025-07-12 15:18:25,551 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 15:18:25,551 - security - INFO - Security and performance monitoring initialized
+2025-07-12 15:18:25,551 - backup - INFO - Database backup created: backups/pos_backup_20250712_151825.db
+2025-07-12 15:18:25,552 - backup - INFO - Backup schedule configured
+2025-07-12 15:18:25,552 - backup - INFO - Backup scheduler started
+2025-07-12 15:18:25,585 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 15:18:25,586 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 15:18:37,743 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 15:18:37,743 - security - INFO - Security and performance monitoring initialized
+2025-07-12 15:18:37,743 - backup - INFO - Database backup created: backups/pos_backup_20250712_151837.db
+2025-07-12 15:18:37,744 - backup - INFO - Backup schedule configured
+2025-07-12 15:18:37,744 - backup - INFO - Backup scheduler started
+2025-07-12 15:18:37,773 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 15:18:37,773 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 15:18:37,777 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+2025-07-12 15:18:37,777 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 15:19:11,279 - ai_analysis - ERROR - Error analyzing daily sales: no such table: orders
+2025-07-12 15:19:11,280 - ai_analysis - ERROR - Error analyzing menu performance: no such table: order_items
+2025-07-12 15:19:11,280 - ai_analysis - ERROR - Error predicting ingredient needs: no such table: order_items
+2025-07-12 15:19:11,281 - monitoring_simple - INFO - API Request: GET ai_recommendations.get_ai_insights - 200 - 0.0031s
+2025-07-12 15:19:11,281 - security - WARNING - Slow request: GET ai_recommendations.get_ai_insights - 200.00s
+2025-07-12 15:19:11,282 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:19:11] "GET /api/ai/insights HTTP/1.1" 200 -
+2025-07-12 15:28:46,568 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0038s
+2025-07-12 15:28:46,568 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 15:28:46,568 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:46] "GET /api/customer-display/display/1 HTTP/1.1" 200 -
+2025-07-12 15:28:46,602 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0004s
+2025-07-12 15:28:46,602 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:28:46,603 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:46] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:28:46,603 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0004s
+2025-07-12 15:28:46,604 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:28:46,604 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:46] "[36mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 304 -
+2025-07-12 15:28:47,175 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 15:28:47,175 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 15:28:47,175 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:47] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 15:28:47,214 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0005s
+2025-07-12 15:28:47,214 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:28:47,214 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:47] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:28:55,483 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0009s
+2025-07-12 15:28:55,483 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 15:28:55,484 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:55] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:28:55,516 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0007s
+2025-07-12 15:28:55,517 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:28:55,518 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:55] "[36mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 304 -
+2025-07-12 15:28:55,518 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0011s
+2025-07-12 15:28:55,518 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:28:55,519 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:55] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:28:56,084 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 15:28:56,085 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 15:28:56,085 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:56] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 15:28:56,132 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0005s
+2025-07-12 15:28:56,132 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:28:56,133 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:28:56] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:30:43,086 - ai_analysis - ERROR - Error analyzing daily sales: no such table: orders
+2025-07-12 15:30:43,086 - ai_analysis - ERROR - Error analyzing menu performance: no such table: order_items
+2025-07-12 15:30:43,087 - ai_analysis - ERROR - Error predicting ingredient needs: no such table: order_items
+2025-07-12 15:30:43,087 - monitoring_simple - INFO - API Request: GET ai_recommendations.get_ai_insights - 200 - 0.0019s
+2025-07-12 15:30:43,087 - security - WARNING - Slow request: GET ai_recommendations.get_ai_insights - 200.00s
+2025-07-12 15:30:43,087 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:30:43] "GET /api/ai/insights HTTP/1.1" 200 -
+2025-07-12 15:30:49,653 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0007s
+2025-07-12 15:30:49,654 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:30:49,654 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:30:49] "[36mGET /api/customer-display/content/1 HTTP/1.1[0m" 304 -
+2025-07-12 15:30:49,773 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0007s
+2025-07-12 15:30:49,773 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:30:49,773 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:30:49] "[36mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 304 -
+2025-07-12 15:30:49,781 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0006s
+2025-07-12 15:30:49,781 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:30:49,784 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:30:49] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:30:50,556 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 15:30:50,556 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 15:30:50,556 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:30:50] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 15:30:50,613 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0004s
+2025-07-12 15:30:50,613 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 15:30:50,614 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:30:50] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 15:33:53,497 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 15:33:53,497 - security - INFO - Security and performance monitoring initialized
+2025-07-12 15:33:53,498 - backup - INFO - Database backup created: backups/pos_backup_20250712_153353.db
+2025-07-12 15:33:53,498 - backup - INFO - Backup schedule configured
+2025-07-12 15:33:53,498 - backup - INFO - Backup scheduler started
+2025-07-12 15:33:53,537 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 15:33:53,537 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 15:33:53,539 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+2025-07-12 15:33:53,539 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 15:34:28,269 - monitoring_simple - INFO - API Request: GET customer_display.customer_display_page - 200 - 0.0002s
+2025-07-12 15:34:28,270 - security - WARNING - Slow request: GET customer_display.customer_display_page - 200.00s
+2025-07-12 15:34:28,270 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:34:28] "GET /api/customer-display/display/1 HTTP/1.1" 200 -
+2025-07-12 15:34:28,333 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:34:28,333 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:34:28,334 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:34:28,334 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:34:28,335 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:34:28,335 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:34:28,335 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0032s
+2025-07-12 15:34:28,335 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:34:28,336 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:34:28] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:34:58,357 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:34:58,358 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:34:58,358 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:34:58,358 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:34:58,359 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:34:58,359 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:34:58,360 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0031s
+2025-07-12 15:34:58,360 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:34:58,360 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:34:58] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:35:28,337 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:35:28,338 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:35:28,338 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:35:28,338 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:35:28,339 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:35:28,339 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:35:28,340 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0029s
+2025-07-12 15:35:28,340 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:35:28,340 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:35:28] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:35:58,339 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:35:58,339 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:35:58,340 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:35:58,340 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:35:58,341 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:35:58,341 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:35:58,341 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0031s
+2025-07-12 15:35:58,341 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:35:58,342 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:35:58] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:36:28,339 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:36:28,340 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:36:28,341 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:36:28,342 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:36:28,342 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:36:28,343 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:36:28,343 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0048s
+2025-07-12 15:36:28,343 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:36:28,344 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:36:28] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:36:58,337 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:36:58,338 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:36:58,338 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:36:58,339 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:36:58,339 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:36:58,340 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:36:58,340 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0030s
+2025-07-12 15:36:58,340 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:36:58,340 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:36:58] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 15:37:28,337 - customer_display - ERROR - Error getting display settings: no such table: display_settings
+2025-07-12 15:37:28,338 - customer_display - ERROR - Error getting active advertisements: no such table: advertisements
+2025-07-12 15:37:28,338 - customer_display - ERROR - Error getting store info: no such column: description
+2025-07-12 15:37:28,339 - customer_display - ERROR - Error getting featured menu: no such table: menu_items
+2025-07-12 15:37:28,339 - customer_display - ERROR - Error getting current promotions: no such table: promotions
+2025-07-12 15:37:28,340 - customer_display - ERROR - Error getting queue info: no such table: orders
+2025-07-12 15:37:28,340 - monitoring_simple - INFO - API Request: GET customer_display.get_display_content - 200 - 0.0029s
+2025-07-12 15:37:28,340 - security - WARNING - Slow request: GET customer_display.get_display_content - 200.00s
+2025-07-12 15:37:28,340 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 15:37:28] "GET /api/customer-display/content/1 HTTP/1.1" 200 -
+2025-07-12 16:14:09,216 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 16:14:09,217 - security - INFO - Security and performance monitoring initialized
+2025-07-12 16:14:09,217 - backup - INFO - Database backup created: backups/pos_backup_20250712_161409.db
+2025-07-12 16:14:09,217 - backup - INFO - Backup schedule configured
+2025-07-12 16:14:09,218 - backup - INFO - Backup scheduler started
+2025-07-12 16:14:09,272 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 16:14:09,272 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 16:14:21,041 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 16:14:21,041 - security - INFO - Security and performance monitoring initialized
+2025-07-12 16:14:21,041 - backup - INFO - Database backup created: backups/pos_backup_20250712_161421.db
+2025-07-12 16:14:21,041 - backup - INFO - Backup schedule configured
+2025-07-12 16:14:21,042 - backup - INFO - Backup scheduler started
+2025-07-12 16:14:21,095 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://169.254.0.21:5001
+2025-07-12 16:14:21,095 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 16:14:54,555 - monitoring_simple - INFO - API Request: GET index - 200 - 0.0001s
+2025-07-12 16:14:54,556 - security - WARNING - Slow request: GET index - 200.00s
+2025-07-12 16:14:54,556 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:14:54] "GET / HTTP/1.1" 200 -
+2025-07-12 16:14:54,646 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0031s
+2025-07-12 16:14:54,646 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 16:14:54,647 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:14:54] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-12 16:27:40,716 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 16:27:40,716 - security - INFO - Security and performance monitoring initialized
+2025-07-12 16:27:40,717 - backup - INFO - Database backup created: backups/pos_backup_20250712_162740.db
+2025-07-12 16:27:40,717 - backup - INFO - Backup schedule configured
+2025-07-12 16:27:40,718 - backup - INFO - Backup scheduler started
+2025-07-12 16:27:40,781 - monitoring - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 16:27:40,781 - monitoring - INFO - Monitoring, backup, and security systems active
+2025-07-12 16:27:49,726 - monitoring - INFO - Simple monitoring system initialized
+2025-07-12 16:27:49,727 - security - INFO - Security and performance monitoring initialized
+2025-07-12 16:27:49,727 - backup - INFO - Database backup created: backups/pos_backup_20250712_162749.db
+2025-07-12 16:27:49,727 - backup - INFO - Backup schedule configured
+2025-07-12 16:27:49,728 - backup - INFO - Backup scheduler started
+2025-07-12 16:27:49,790 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://169.254.0.21:5001
+2025-07-12 16:27:49,790 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 16:28:25,037 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0002s
+2025-07-12 16:28:25,037 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:28:25,038 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:28:25] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:28:25,041 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:28:25,041 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:28:25,041 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:28:25] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:28:36,368 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:28:36,368 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:28:36,368 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:28:36] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:28:36,372 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:28:36,372 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:28:36,372 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:28:36] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:29:08,359 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0002s
+2025-07-12 16:29:08,360 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:29:08,360 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:08] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:29:08,367 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:29:08,367 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:29:08,367 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:08] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:29:33,067 - monitoring_simple - INFO - API Request: OPTIONS auth.login - 200 - 0.0004s
+2025-07-12 16:29:33,068 - security - WARNING - Slow request: OPTIONS auth.login - 200.00s
+2025-07-12 16:29:33,068 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:33] "OPTIONS /api/auth/login HTTP/1.1" 200 -
+2025-07-12 16:29:33,071 - monitoring_simple - INFO - API Request: POST auth.login - 401 - 0.0008s
+2025-07-12 16:29:33,071 - security - WARNING - Slow request: POST auth.login - 401.00s
+2025-07-12 16:29:33,072 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:33] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2025-07-12 16:29:49,193 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0034s
+2025-07-12 16:29:49,193 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 16:29:49,193 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "GET /api/auth/login HTTP/1.1" 200 -
+2025-07-12 16:29:49,215 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0004s
+2025-07-12 16:29:49,215 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 16:29:49,216 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "GET /assets/index-DKyIbf6X.js HTTP/1.1" 200 -
+2025-07-12 16:29:49,217 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0005s
+2025-07-12 16:29:49,217 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 16:29:49,217 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "GET /assets/index-YgppWfD1.css HTTP/1.1" 200 -
+2025-07-12 16:29:49,312 - monitoring_simple - INFO - API Request: GET serve - 200 - 0.0006s
+2025-07-12 16:29:49,312 - security - WARNING - Slow request: GET serve - 200.00s
+2025-07-12 16:29:49,312 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "GET /logo.png HTTP/1.1" 200 -
+2025-07-12 16:29:49,321 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:29:49,321 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:29:49,322 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:29:49,393 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0004s
+2025-07-12 16:29:49,393 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 16:29:49,394 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "[36mGET /assets/index-YgppWfD1.css HTTP/1.1[0m" 304 -
+2025-07-12 16:29:49,407 - monitoring_simple - INFO - API Request: GET serve - 304 - 0.0004s
+2025-07-12 16:29:49,407 - security - WARNING - Slow request: GET serve - 304.00s
+2025-07-12 16:29:49,407 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:29:49] "[36mGET /logo.png HTTP/1.1[0m" 304 -
+2025-07-12 16:32:16,187 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:32:16,188 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:32:16,188 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:32:16] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 16:32:16,191 - monitoring_simple - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 16:32:16,191 - security - WARNING - Slow request: GET auth.get_profile - 401.00s
+2025-07-12 16:32:16,191 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 16:32:16] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -

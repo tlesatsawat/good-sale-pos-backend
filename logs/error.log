@@ -1,0 +1,1 @@
+2025-07-12 14:37:41,733 - backup - ERROR - Failed to create database backup: [Errno 2] No such file or directory: 'pos_database.db'

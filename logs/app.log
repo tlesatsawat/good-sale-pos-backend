@@ -1,0 +1,59 @@
+2025-07-12 14:37:41,732 - root - INFO - Monitoring system initialized
+2025-07-12 14:37:41,732 - security - INFO - Security and performance monitoring initialized
+2025-07-12 14:37:41,733 - backup - ERROR - Failed to create database backup: [Errno 2] No such file or directory: 'pos_database.db'
+2025-07-12 14:37:41,733 - backup - INFO - Backup schedule configured
+2025-07-12 14:37:41,734 - backup - INFO - Backup scheduler started
+2025-07-12 14:37:41,756 - root - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 14:37:41,756 - root - INFO - Monitoring, backup, and security systems active
+2025-07-12 14:37:41,759 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+2025-07-12 14:37:41,760 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 14:38:16,834 - monitoring - INFO - Database Health: Size: 0 bytes, Tables: 0
+2025-07-12 14:38:16,835 - monitoring - INFO - API Request: GET health_check - 200 - 1.0020s
+2025-07-12 14:38:16,836 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:38:16] "GET /api/health HTTP/1.1" 200 -
+2025-07-12 14:38:21,695 - monitoring - INFO - API Request: GET metrics - 200 - 1.0015s
+2025-07-12 14:38:21,695 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:38:21] "GET /api/metrics HTTP/1.1" 200 -
+2025-07-12 14:38:44,001 - monitoring - INFO - API Request: HEAD serve - 200 - 0.0030s
+2025-07-12 14:38:44,001 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:38:44] "HEAD / HTTP/1.1" 200 -
+2025-07-12 14:38:44,009 - monitoring - INFO - API Request: GET serve - 200 - 0.0003s
+2025-07-12 14:38:44,009 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:38:44] "GET / HTTP/1.1" 200 -
+2025-07-12 14:43:54,009 - root - INFO - Monitoring system initialized
+2025-07-12 14:43:54,009 - security - INFO - Security and performance monitoring initialized
+2025-07-12 14:43:54,010 - backup - INFO - Database backup created: backups/pos_backup_20250712_144354.db
+2025-07-12 14:43:54,010 - backup - INFO - Backup schedule configured
+2025-07-12 14:43:54,011 - backup - INFO - Backup scheduler started
+2025-07-12 14:43:54,036 - root - INFO - GOOD SALE POS starting on port 5000
+2025-07-12 14:43:54,037 - root - INFO - Monitoring, backup, and security systems active
+2025-07-12 14:43:54,040 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+2025-07-12 14:43:54,040 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-12 14:44:27,832 - monitoring - INFO - API Request: GET stock_management.get_stock_items - 200 - 0.0010s
+2025-07-12 14:44:27,833 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:44:27] "GET /api/stock/items HTTP/1.1" 200 -
+2025-07-12 14:44:33,364 - monitoring - INFO - API Request: GET loyalty.get_available_rewards - 200 - 0.0002s
+2025-07-12 14:44:33,364 - werkzeug - INFO - 127.0.0.1 - - [12/Jul/2025 14:44:33] "GET /api/loyalty/rewards HTTP/1.1" 200 -
+2025-07-12 14:44:48,464 - monitoring - INFO - API Request: GET serve - 200 - 0.0031s
+2025-07-12 14:44:48,464 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:48] "GET / HTTP/1.1" 200 -
+2025-07-12 14:44:48,801 - monitoring - INFO - API Request: GET serve - 304 - 0.0005s
+2025-07-12 14:44:48,802 - monitoring - INFO - API Request: GET serve - 304 - 0.0018s
+2025-07-12 14:44:48,803 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:48] "[36mGET /assets/index-DVwoJx2q.js HTTP/1.1[0m" 304 -
+2025-07-12 14:44:48,803 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:48] "[36mGET /assets/index-dMa7SZ_7.css HTTP/1.1[0m" 304 -
+2025-07-12 14:44:49,180 - monitoring - INFO - API Request: GET auth.get_profile - 401 - 0.0001s
+2025-07-12 14:44:49,181 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:49] "[31m[1mGET /api/auth/profile HTTP/1.1[0m" 401 -
+2025-07-12 14:44:52,267 - monitoring - INFO - API Request: POST auth.login - 200 - 0.0011s
+2025-07-12 14:44:52,268 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:52] "POST /api/auth/login HTTP/1.1" 200 -
+2025-07-12 14:44:52,670 - monitoring - INFO - API Request: GET stores.get_stores - 200 - 0.0001s
+2025-07-12 14:44:52,671 - monitoring - INFO - API Request: GET packages.get_current_subscription - 200 - 0.0001s
+2025-07-12 14:44:52,672 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:52] "GET /api/stores HTTP/1.1" 200 -
+2025-07-12 14:44:52,672 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:52] "GET /api/subscription/current HTTP/1.1" 200 -
+2025-07-12 14:44:56,482 - monitoring - INFO - API Request: POST stores.close_store - 200 - 0.0001s
+2025-07-12 14:44:56,482 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:56] "POST /api/stores/1/close HTTP/1.1" 200 -
+2025-07-12 14:44:56,865 - monitoring - INFO - API Request: GET stores.get_stores - 200 - 0.0001s
+2025-07-12 14:44:56,866 - monitoring - INFO - API Request: GET packages.get_current_subscription - 200 - 0.0001s
+2025-07-12 14:44:56,866 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:56] "GET /api/stores HTTP/1.1" 200 -
+2025-07-12 14:44:56,866 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:44:56] "GET /api/subscription/current HTTP/1.1" 200 -
+2025-07-12 14:45:02,721 - monitoring - INFO - API Request: POST auth.logout - 200 - 0.0001s
+2025-07-12 14:45:02,722 - werkzeug - INFO - 10.150.97.1 - - [12/Jul/2025 14:45:02] "POST /api/auth/logout HTTP/1.1" 200 -
